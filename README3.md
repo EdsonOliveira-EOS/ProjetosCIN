@@ -4,13 +4,14 @@
 
 ---
 
-### 🧑‍💻 A little about me
+### 🧑‍💻 Brief Introduction
 
-- 🔨 I'm currently working on improving my **Software Development skills.**
-- 🌱 I'm currently learning **Game Development, Software Testing, and Docker.**
-- 🤝 I'm looking for help with **Software Development.**
+- 🔨 I'm currently working on learning "JavaScript'' and "Java" to expand my knowledge in programming.
+- 🌱 I'm currently learning **Calculus, Programming, Circuits and Algorithms**
 - 💬 Ask me about **Games and Programming.**
-- 📫 How to reach me: oliveiraedson.silva2007@hotmail.com
+- 📫 How to reach me: oliveiraedson.silva2007@hotmail.com | 💭 +55 (81) 9 9376-2931
+- 🌐 Languages i know: Brazilian Portuguese - English
+- 🖋 Currently pursuing a degree in Computer Engineering at UFPE!
 
 ---
 
@@ -23,14 +24,16 @@
 ### 💻 Languages and Tools:
 
 <div>
-  <img src="https://skillicons.dev/icons?i=cpp,cs,css,git,html,js,mongodb,nodejs,postgresql,python,fastapi,sqlite,react,unity,godot,sklearn,prisma,sklearn&perline=10" />
+  <img src="https://skillicons.dev/icons?i=c,python,vscode,github" />
 </div>
 
 ---
 
 ### 📁 Projects I've worked on
 
-▶ 💻 **Software Development**
+▶ **Imperative Programmation: https://github.com/EdsonOliveira-EOS/Atividades-PI**
+
+▶ **Digital Circuits: https://github.com/EdsonOliveira-EOS/Projeto-SD**
 
 > Em breve mais projetos por aqui... 🚧
 
