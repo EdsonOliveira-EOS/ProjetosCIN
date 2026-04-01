@@ -6,7 +6,7 @@
 
 ### 🧑‍💻 Brief Introduction
 
-- Hello, i am Edson Oliveira da Silva! Or wordly known as Phaidros.
+- Hello, i am Edson Oliveira da Silva! Or globally known as Phaidros.
 - 🔨 I'm currently working on learning "JavaScript'' and "Java" to expand my knowledge in programming.
 - 🌱 I'm currently learning **Calculus, Programming, Circuits and Algorithms**
 - 💬 Ask me about **Games and Programming.**
