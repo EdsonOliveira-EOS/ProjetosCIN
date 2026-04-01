@@ -15,14 +15,6 @@
 - 🖋 Currently pursuing a degree in Computer Engineering at UFPE!
 - 🌐 I'm currently a Teaching Assistant for Introduction to Programming at the Center for Informatics (CIn) at UFPE!
 
----
-
-### 🔗 Connect with me:
-
-[![Discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com)
-
----
-
 ### 💻 Languages and Tools:
 
 <div>
