@@ -10,7 +10,7 @@
 - 🔨 I'm currently working on learning "JavaScript'' and "Java" to expand my knowledge in programming.
 - 🌱 I'm currently learning **Calculus, Programming, Circuits and Algorithms**
 - 💬 Ask me about **Games and Programming.**
-- 📫 How to reach me: oliveiraedson.silva2007@hotmail.com | 💭 +55 (81) 9 9376-2931
+- 📫 How to reach me: oliveiraedson.silva2007@hotmail.com
 - 🌐 Languages i know: Brazilian Portuguese - English
 - 🖋 Currently pursuing a degree in Computer Engineering at UFPE!
 - 🌐 I'm currently a Teaching Assistant for Introduction to Programming at the Center for Informatics (CIn) at UFPE!
