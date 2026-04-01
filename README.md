@@ -32,7 +32,7 @@
 
 ### 📁 Projects I've worked on
 
-▶ **Imperative Programmation: https://github.com/EdsonOliveira-EOS/Atividades-PI**
+▶ **Imperative Programmation (Learning C): https://github.com/EdsonOliveira-EOS/Atividades-PI**
 
 ▶ **Digital Circuits: https://github.com/EdsonOliveira-EOS/Projeto-SD**
 
