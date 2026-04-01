@@ -35,14 +35,3 @@
 > Em breve mais projetos por aqui... 🚧
 
 ---
-
-<div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=EdsonOliveira-EOS&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=EdsonOliveira-EOS&layout=compact&langs_count=7&theme=tokyonight&hide_border=true"/>
-</div>
-
----
-
-<div align="center">
-  <img src="https://komarev.com/ghpvc/?username=EdsonOliveira-EOS&color=blueviolet&style=for-the-badge&label=PROFILE+VIEWS" />
-</div>
