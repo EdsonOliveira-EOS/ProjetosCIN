@@ -2,18 +2,16 @@
 def malkuth (energianecessaria):
     # A Malkuth é a sefirá da organização, ela dará um teste para o aluno ter que receber um input com vários nomes e ter que ordenar pelo tamanho dos nomes.
     print ("Hoje é o dia da Malkuth!")
-    print ("Malkuth: Ah, onde estão meus modos! Meu nome é Malkuth, e eu estou em cargo do time de controle!")
+    print ("Malkuth: Ah, onde estão meus modos! Malkuth se apresentando, gerente!")
     print ("Malkuth: Estamos responsáveis hoje por organizar alfabeticamente nossa lista de funcionários do time de controle, vamos entregar com resultados perfeitos, gerente!")
     print ("")
-
-    # Um exemplo de input: Roland Angela Netzach Yesod Hod
+    # Um exemplo de input e saída: Roland Angela Netzach Yesod Hod = Hod Yesod Roland Angela Neztach
     listanomes = input().split()
     # Se caso nenhum funcionário estiver no time:
     if len(listanomes) == 0:
         print("Malkuth: Pessoal?! Onde está todo mundo?! Isso é inaceitável!")
         print ("")
         return 0
-
     # Bubblesort
     trocas = 0
     for i in range (len(listanomes)):
@@ -23,10 +21,9 @@ def malkuth (energianecessaria):
 
                 # Cada troca adicionará 1 na variável trocas para ser usado no manejo da energia.
                 trocas += 1
-
     print(*listanomes)
-    energia = max(0, 200 - trocas * 20)
 
+    energia = max(0, 300 - trocas * 20)
     print(f"Energia Coletada: {energia} / {energianecessaria}")
     if energia >= energianecessaria:
         print ("Malkuth: O treino vespertino de hoje foi um sucesso! Estarei esperando vocês no período noturno, pessoal!")
@@ -38,27 +35,93 @@ def malkuth (energianecessaria):
         return 0
     
 def yesod(energianecessaria):
-    return 0
+    print ("Hoje é dia do Yesod!")
+    print ("Yesod: Gerente, você é a cabeça dessa corporação, você deve agir como um exemplo para os outros e fazer certeza que esse dia passe coordialmente seguindo as regras.")
+    print ("Yesod: Hoje estamos com um problema a resolver, Gerente. Você é um progamador, não é? Hoje recebemos notas de funcionários que vão de a-z, e você terá de as comprimir para facilitar as informações.")
+    print ()
+    # Um exemplo de notas e uma saída: AAAABBBBCCC = 4A4B3C
+    notasdescomprimidas = input()
+    notascomprimidas = ''
+    i = 0
+    char = ''
+    while i < len(notasdescomprimidas) and char != "&":
+        char = notasdescomprimidas[i]
+        if char != "&":
+            contagem = 1
+            while i + contagem < len(notasdescomprimidas) and notasdescomprimidas[i + contagem] == char:
+                contagem += 1
+            if contagem > 1:
+                notascomprimidas += str(contagem) + char
+            else:
+                notascomprimidas += char
+            i += contagem
 
-def chesed(energianecessaria):
-    return 0
-
+    if char == "&":
+        print ("Yesod: As notas de hoje estavam corrompidas, gerente.. devemos encerrar o dia mais cedo e investigar.")
+        print (f"Yesod: Pelo menos, essas informações ainda estão conosco: '{notascomprimidas}'")
+        print ()
+        return 0
+    else:
+        print (f"Yesod: Gerente, aqui está as notas comprimidas: '{notascomprimidas}'")
+        print (f"Energia Coletada: {energianecessaria} / {energianecessaria}")
+        print ()
+        return 1
+    
 def binah(energianecessaria):
-    return 0
+    print ("Hoje é o dia da Binah.")
+    print ("Binah: ...Gerente. Você chegou.")
+    print ("Binah: Você já deve saber o que fazer. Espero um bom resultado vindo de você, gerente.")
+    print ("")
 
-def dias(dia, energianecessaria):
+    # Leitura da matriz A
+    A = []
+    for _ in range(3):
+        linha = input().split()
+        linha = [int(x) for x in linha]
+        A.append(linha)
+    # Leitura da matriz B
+    B = []
+    for _ in range(3):
+        linha = input().split()
+        linha = [int(x) for x in linha]
+        B.append(linha)
+    # Matriz C (fixa)
+    C = [[0, 0, 0],
+         [0, 0, 0],
+         [0, 0, 0]]
+    # Multiplicação das matrizes
+    for i in range(3):
+        for j in range(3):
+            for k in range(3):
+                C[i][j] += A[i][k] * B[k][j]
+
+    for linha in C:
+        print(linha)
+    energia = 0
+    for i in range(3):
+        energia += C[i][i]
+
+    print("")
+    print(f"Energia Coletada: {energia} / {energianecessaria}")
+    if energia >= energianecessaria:
+        print("Binah: O expediente foi concluído. Não cometa os mesmos erros amanhã.")
+        print("")
+        return 1
+    else:
+        print("Binah: É realmente uma sensação única te ver falhando, Gerente...")
+        print("")
+        return 0
+
+def dias(energianecessaria):
     sefirot = input()
 
     if sefirot == 'Malkuth':
         diaconcluido = malkuth(energianecessaria)
         conclusaodias.append(diaconcluido)
-    elif sefirot == "Yesod":
+    elif sefirot == 'Yesod':
         diaconcluido = yesod(energianecessaria)
         conclusaodias.append(diaconcluido)
-    elif sefirot == "Chesed":
-        diaconcluido = chesed(energianecessaria)
-        conclusaodias.append(diaconcluido)
-    elif sefirot == "Binah":
+    elif sefirot == 'Binah':
         diaconcluido = binah(energianecessaria)
         conclusaodias.append(diaconcluido)
     else:
@@ -75,14 +138,14 @@ print ("Hoje é o dia da Lobotomy CinCorporation!")
 while (dia <= quantidade_de_dias):
 
     print (f"Angela: Hoje é o dia {dia} de {quantidade_de_dias}. Espero mais um expediente concluído com excelência, gerente.")
-    dias(dia, energianecessaria)
+    dias(energianecessaria)
 
     energianecessaria += 40
     dia += 1
 
-print ("Angela O relatório dessa semana está pronto, gerente.")
+print ("Angela: O relatório dessa semana está pronto, gerente.")
 for i in range(len(conclusaodias)):
     if conclusaodias[i]:
         print (f"Dia {i + 1} | Status: Energia necessária adquirida.")
-    else:
+    else:   
         print (f"Dia {i + 1} | Status: Energia necessária não adquirida.")
